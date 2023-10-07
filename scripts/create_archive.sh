@@ -2,7 +2,8 @@
 
 set -ueo pipefail
 
-DIR_TO_ZST=../../radiantbrink/balancer_v2
+# DIR_TO_ZST=../../radiantbrink/balancer_v2
+DIR_TO_ZST=balancer_v2_upstream
 
 # copy this dir to pwd
 
