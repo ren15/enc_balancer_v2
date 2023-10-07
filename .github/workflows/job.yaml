@@ -25,5 +25,6 @@ jobs:
       - name: Run tests
         run: |
           cd balancer_v2
+          sudo chmod -R 777 .
           bash scripts/cpp_clone.sh
           bash scripts/build_in_centos7.sh
