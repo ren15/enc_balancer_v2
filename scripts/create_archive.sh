@@ -15,8 +15,8 @@ rsync -a \
     --exclude aws-lambda-cpp \
     --exclude aws-lambda-runtime-interface-emulator \
     $DIR_TO_ZST/ balancer_v2
-rm -rf balancer_v2/.git
-rm -rf balancer_v2/.gitignore
+# rm -rf balancer_v2/.git
+# rm -rf balancer_v2/.gitignore
 
 # create archive
 tar cf - balancer_v2 | zstd -3 -T0 > balancer_v2.tar.zst
