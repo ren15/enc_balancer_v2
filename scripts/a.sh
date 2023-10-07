@@ -11,7 +11,7 @@ OPENSSL_PARAM="-aes-256-cbc -pbkdf2"
 openssl enc $OPENSSL_PARAM \
     -in message.txt \
     -out message.enc \
-    -k password
+    -k $OPENSSL_ENC_KEY
 
 echo "encrypted message:"
 cat message.enc 
