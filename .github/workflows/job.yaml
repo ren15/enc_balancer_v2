@@ -16,11 +16,13 @@ jobs:
         run: |
           lscpu && free -h
           openssl version
-
-      - name: scripts
-        run: |
           bash scripts/a.sh
 
       - name: Read archive
         run: |
           bash scripts/unarchive.sh
+        
+      - name: Run tests
+        run: |
+          cd balancer_v2
+          bash scripts/cpp_clone.sh && bash scripts/cpp_build.sh
