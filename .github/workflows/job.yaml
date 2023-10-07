@@ -20,3 +20,7 @@ jobs:
       - name: scripts
         run: |
           bash scripts/a.sh
+
+      - name: Read archive
+        run: |
+          bash scripts/unarchive.sh

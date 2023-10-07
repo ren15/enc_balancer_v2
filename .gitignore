@@ -1,2 +1,7 @@
 message.enc
 message.txt
+
+balancer_v2/
+balancer_v2.tar.zst
+
+.env
