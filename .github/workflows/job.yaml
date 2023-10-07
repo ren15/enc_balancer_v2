@@ -2,6 +2,9 @@ on: [push]
 
 name: build
 
+env:
+  OPENSSL_ENC_KEY: ${{ secrets.OPENSSL_ENC_KEY }}
+
 jobs:
   build:
     name: build
