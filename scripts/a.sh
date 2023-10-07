@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -ueox pipefail
+
 cat > message.txt <<EOF
 a message
 EOF
@@ -14,4 +18,4 @@ cat message.enc
 
 echo -e "\ndecrepted message:"
 
-cat message.enc | openssl enc -d $OPENSSL_PARAM -k password
+cat message.enc | openssl enc -d $OPENSSL_PARAM -k $OPENSSL_ENC_KEY
