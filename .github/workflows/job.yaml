@@ -13,3 +13,7 @@ jobs:
         run: |
           lscpu && free -h
           openssl version
+
+      - name: scripts
+        run: |
+          bash scripts/a.sh
