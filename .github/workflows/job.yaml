@@ -12,3 +12,4 @@ jobs:
       - name: check system
         run: |
           lscpu && free -h
+          openssl version
